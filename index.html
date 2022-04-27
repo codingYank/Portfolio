@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&family=Teko:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="script.js" defer></script>
+    <title>Portfolio</title>
+</head>
+<body> 
+        <header class="header">
+            <img class="background" src="img/background.jpg">
+            <h1>Tyler Schmidt</h1>
+            <span>Bringing the Web to life</span>
+            <img class="down-arrow" src="img/arrow_down.svg">
+            
+            <img class="dot dot1" src="img/dot.png">
+            <img class="dot dot2" src="img/dot.png">
+            <img class="dot dot3" src="img/dot.png">
+            <img class="dot dot4" src="img/dot.png">
+            <img class="dot dot5" src="img/dot.png">
+            <img class="dot dot6" src="img/dot.png">
+            <img class="dot dot7" src="img/dot.png">
+            <img class="dot dot8" src="img/dot.png">
+        </header>
+        <section class="section" data-aos="fade-in">
+            <h2 class="section-header" data-aos="fade">About Me</h2>
+            <div class="about-section-container">
+                <img src="img/me-avitar.png" alt="Me" data-aos="slide-left">
+                <div class="about-container" data-aos="slide-right">
+                    <p>Welcome to my portfolio</p>
+                    <p>I'm a web developer with a passion for utilizing my creative nature to bring the web to life</p>
+                </div>       
+            </div>
+        </section>
+        <section class="section section-accent" >
+            <h2 class="section-header" data-aos="fade">Skills</h2>
+            <div class="skills-grid">
+                <div class="skills-grid-item" data-aos="fade-right">
+                    <img src="img/html_icon.svg" alt="HTML icon" width="80px">
+                    <p>Using HTML to create informative websites</p>
+                </div>
+                <div class="skills-grid-item" data-aos="fade-left">
+                    <img src="img/css-icon1.svg" alt="CSS icon" width="90px">
+                    <p>Utilizing CSS to make stunnng accessible sites</p>
+                </div>
+                <div class="skills-grid-item" data-aos="fade-right">
+                    <img src="img/JavaScript-icon.svg" alt="JavaScript icon" width="110px">
+                    <p>Building crutial functionality with JavaScript</p>
+                </div>
+                <div class="skills-grid-item" data-aos="fade-left">
+                    <img src="img/vscode_icon.svg" alt="Visual Studio Code icon" width="100px">
+                    <p>Experianced in Visual Studio Code to edit amazing web creations</p>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <h2 data-aos="fade">My Work</h2>
+            <div class="work-cards-container">
+                <div class="work-card-container" data-aos="slide-right">
+                    <a href="mma-photo.html" target="blank">
+                        <div class="work-card">
+                            <img src="img/mma-photo.png" alt="MMA Photography">
+                            <p>MMA Photography</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="work-card-container" data-aos="zoom-in">
+                    <a href="https://ftcsoccer.com/" target="blank">
+                        <div class="work-card">
+                            <img src="img/ftcsoccer-photo.png" alt="Chicken Beats">
+                            <p>For The Crest Soccer</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="work-card-container" data-aos="slide-left">
+                    <a href="chicken-beats.html" target="blank">
+                        <div class="work-card">
+                            <img src="img/chicken-beats-photo.png" alt="Chicken Beats">
+                            <p>Chicken Beats</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="section" data-aos="fade-up">
+            <h2 class="section-header">Contact Me</h2>
+            <div class="contact-iframe-container">
+                <iframe class="contact-iframe" src="contact.html" width="400px"></iframe>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="footer-info-container">
+                <span>Tyler Schmidt</span>
+                <a href="https://www.linkedin.com/in/tyler-schmidt-4647b2162/"><img src="img/linkedin-logo.png" alt="linkedin"></a>
+            </div>
+            <div class="themes-container">
+                <span>Change Themes</span>
+                <select class="select-theme-input" id="selTheme">
+                    <option value="auto">Auto</option>
+                    <option value="light">Light</option>
+                    <option value="dark">Dark</option>
+                </select>
+            </div>
+        </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+          offset: 400,
+          duration: 1000
+      });
+    </script>
+</body>
+</html>
