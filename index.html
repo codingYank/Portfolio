@@ -12,11 +12,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <script src="script.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="theme.js" defer></script>
+    <script src="cursor-tail.js" defer></script>
+    <script>
+        function resizeIframe(obj) {
+          obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
+        }
+      </script>
     <title>Portfolio</title>
 </head>
 <body> 
         <header class="header">
+            <div class="tail-grid-container">
+                
+            </div>
             <img class="background" src="img/background.jpg">
             <h1>Tyler Schmidt</h1>
             <span>Bringing the Web to life</span>
@@ -53,7 +63,7 @@
                     <p>Utilizing CSS to make stunnng accessible sites</p>
                 </div>
                 <div class="skills-grid-item" data-aos="fade-right">
-                    <img src="img/JavaScript-icon.svg" alt="JavaScript icon" width="110px">
+                    <img src="img/javaScript-icon.svg" alt="JavaScript icon" width="110px">
                     <p>Building crutial functionality with JavaScript</p>
                 </div>
                 <div class="skills-grid-item" data-aos="fade-left">
@@ -94,7 +104,7 @@
         <section class="section" data-aos="fade-up">
             <h2 class="section-header">Contact Me</h2>
             <div class="contact-iframe-container">
-                <iframe class="contact-iframe" src="contact.html" width="400px"></iframe>
+                <iframe class="contact-iframe" src="contact.html" width="400px" frameborder="0" scrolling="no" onload="resizeIframe(this)"></iframe>
             </div>
         </section>
         <footer class="footer">
