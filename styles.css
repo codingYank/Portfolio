@@ -78,6 +78,8 @@ nav a {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  gap: 15px;
+  row-gap: 50px;
 }
 
 .work-card-container {
@@ -231,6 +233,10 @@ input[type="checkbox"].theme-toggle:checked + label::after {
   background-color: black;
 }
 
+.hide {
+  display: none;
+}
+
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
   background-color: transparent;
@@ -270,15 +276,22 @@ input[type="checkbox"].theme-toggle:checked + label::after {
 
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
-  background-color: #bbb;
-  color: black;
+  color: var(--text-color);
 }
 
 /* Style the back side */
 .flip-card-back {
-  background-color: dodgerblue;
-  color: white;
+  background-color: var(--alt-background-color);
+  color: var(--alt-text-color);
   transform: rotateY(180deg);
+}
+
+.flip-card-back p, .flip-card-back a {
+  color: var(--alt-text-color);
+}
+
+.flip-card-back a {
+  bottom: 0;
 }
 
 
