@@ -1,0 +1,12 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/example/public_html/tylernschmidt
+    - /bin/cp index.html $DEPLOYPATH
+    - /bin/cp about.html $DEPLOYPATH
+    - /bin/cp projects.html $DEPLOYPATH
+    - /bin/cp script.js $DEPLOYPATH
+    - /bin/cp theme.js $DEPLOYPATH
+    - /bin/cp style.css $DEPLOYPATH
+    - /bin/cp -R img $DEPLOYPATH
+    - /bin/cp -R player-value-predictor $DEPLOYPATH
