@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/player-value-predictor/static/css/main.3d88cc1b.css",
+    "main.js": "/player-value-predictor/static/js/main.e8897e13.js",
+    "static/media/background.jpg": "/player-value-predictor/static/media/background.d5d6d736af180011953f.jpg",
+    "static/media/ppg-value-plot.png": "/player-value-predictor/static/media/ppg-value-plot.35c571a30a2b823e3d83.png",
+    "static/media/age-value-plot.png": "/player-value-predictor/static/media/age-value-plot.c675f75aefefe652ca42.png",
+    "static/media/games-goals-plot.png": "/player-value-predictor/static/media/games-goals-plot.a418f7f0a5695910c1dd.png",
+    "static/media/age-max-value-bar.png": "/player-value-predictor/static/media/age-max-value-bar.6ba70b39f55fb0e0601e.png",
+    "index.html": "/player-value-predictor/index.html",
+    "main.3d88cc1b.css.map": "/player-value-predictor/static/css/main.3d88cc1b.css.map",
+    "main.e8897e13.js.map": "/player-value-predictor/static/js/main.e8897e13.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3d88cc1b.css",
+    "static/js/main.e8897e13.js"
+  ]
+}
